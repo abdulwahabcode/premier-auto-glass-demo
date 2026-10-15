@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier Auto Glass — Mobile Auto Glass, We Come To You | Cushing, OK</title>
+<meta name="description" content="Premier Auto Glass — mobile windshield replacement and auto glass repair in Cushing, OK. We come to you. Free quotes: 918-999-1779.">
+<style>
+  :root{
+    --deep:#0F1B25;        /* blue-tinted black */
+    --deep-2:#14242F;
+    --glass:#3A6A8A;       /* 30% glass blue */
+    --glass-deep:#2C546E;
+    --chrome:#CBD5DC;
+    --ice:#8FBCD6;         /* 10% accent */
+    --paper:#EFF3F6;       /* 60% light */
+    --card:#FFFFFF;
+    --text:#EAF0F4;        /* off-white */
+    --text-dark:#22303A;
+    --muted:#9DB0BE;
+    --muted-dark:#5C6F7D;
+    --sans:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--paper);color:var(--text-dark);overflow-x:hidden;line-height:1.65;-webkit-text-size-adjust:100%}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  /* ---------- NAV ---------- */
+  nav{position:sticky;top:0;z-index:50;background:rgba(15,27,37,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(143,188,214,.16)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-weight:800;font-size:1.02rem;letter-spacing:.02em;color:var(--text);text-decoration:none}
+  .brand em{font-style:normal;color:var(--ice)}
+  .nav-links{display:none;gap:26px}
+  .nav-links a{text-decoration:none;font-size:.85rem;font-weight:600;color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--ice);color:#0F1B25;text-decoration:none;font-weight:800;font-size:.85rem;padding:11px 22px;border-radius:999px;white-space:nowrap}
+  .nav-cta:hover{background:#A8CCE2}
+  @media(min-width:760px){.nav-links{display:flex}}
+
+  /* ---------- HERO ---------- */
+  .hero{background:radial-gradient(120% 130% at 50% -10%,var(--glass-deep) 0%,var(--deep) 62%);color:var(--text);padding:96px 0 0;position:relative;overflow:hidden}
+  .hero .wrap{position:relative;text-align:center}
+  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(143,188,214,.4);border-radius:999px;padding:8px 18px;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ice);margin-bottom:22px}
+  .pill i{width:8px;height:8px;border-radius:50%;background:#7BD88F;box-shadow:0 0 10px #7BD88F}
+  .hero h1{font-size:clamp(2.4rem,8.5vw,4.6rem);font-weight:800;letter-spacing:-.02em;line-height:1.04}
+  .hero h1 .grad{background:linear-gradient(100deg,#DCE9F1,var(--ice));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lede{color:var(--muted);font-size:1.08rem;max-width:600px;margin:20px auto 36px}
+  .btn-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:800;font-size:.95rem;padding:17px 34px;border-radius:999px;min-height:56px}
+  .btn-solid{background:var(--ice);color:#0F1B25}
+  .btn-solid:hover{background:#A8CCE2}
+  .btn-line{border:1.5px solid rgba(234,240,244,.45);color:var(--text)}
+  .btn-line:hover{border-color:var(--text)}
+  .glass-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:52px auto 0;max-width:720px;position:relative;z-index:2}
+  .gstat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:18px;padding:20px 10px}
+  .gstat b{display:block;font-size:clamp(1.1rem,4vw,1.6rem);color:var(--ice)}
+  .gstat span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .arc{display:block;width:100%;height:70px;margin-top:-2px}
+  @media(min-width:700px){.arc{height:110px}}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:72px 0}
+  .sec-tag{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--glass-deep);background:rgba(58,106,138,.12);border-radius:999px;padding:8px 18px;margin-bottom:16px}
+  h2{font-size:clamp(1.75rem,5vw,2.7rem);font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-bottom:14px}
+  .sec-sub{color:var(--muted-dark);max-width:620px;margin-bottom:42px}
+
+  /* services: floating glass cards */
+  .svc-grid{display:grid;gap:18px;grid-template-columns:1fr}
+  @media(min-width:700px){.svc-grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.svc-grid{grid-template-columns:1fr 1fr 1fr}}
+  .svc{background:var(--card);border-radius:22px;padding:32px 28px;box-shadow:0 18px 44px -22px rgba(15,27,37,.28);border:1px solid rgba(58,106,138,.12);position:relative;overflow:hidden}
+  .svc::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--glass),var(--ice))}
+  .svc .ic{width:52px;height:52px;border-radius:16px;background:linear-gradient(140deg,var(--glass),var(--glass-deep));display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .svc .ic svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.9}
+  .svc h3{font-size:1.12rem;font-weight:800;margin-bottom:8px}
+  .svc p{font-size:.95rem;color:var(--muted-dark)}
+  .svc .flag{display:inline-block;margin-top:14px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--glass-deep)}
+
+  /* why: deep band */
+  .deep-band{background:linear-gradient(150deg,var(--deep),var(--deep-2));color:var(--text);border-radius:28px;padding:56px 34px;margin:0 12px}
+  @media(min-width:760px){.deep-band{margin:0 auto;max-width:1080px;padding:64px}}
+  .deep-band .sec-tag{background:rgba(143,188,214,.14);color:var(--ice)}
+  .deep-band h2{color:var(--text)}
+  .deep-band .sec-sub{color:var(--muted)}
+  .why-grid{display:grid;gap:26px;grid-template-columns:1fr;margin-top:10px}
+  @media(min-width:760px){.why-grid{grid-template-columns:1fr 1fr}}
+  .why{display:flex;gap:16px;align-items:flex-start}
+  .why .n{flex:none;width:44px;height:44px;border-radius:50%;background:rgba(143,188,214,.14);border:1px solid rgba(143,188,214,.35);color:var(--ice);font-weight:800;display:flex;align-items:center;justify-content:center}
+  .why h3{font-size:1.02rem;font-weight:800;margin-bottom:4px}
+  .why p{color:var(--muted);font-size:.94rem}
+
+  /* area pills */
+  .area-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .area-pills span{background:#fff;border:1px solid rgba(58,106,138,.2);border-radius:999px;padding:10px 20px;font-size:.88rem;font-weight:600;color:var(--glass-deep)}
+
+  /* contact */
+  .contact-card{background:linear-gradient(140deg,var(--glass-deep),var(--deep));color:var(--text);border-radius:28px;padding:60px 30px;text-align:center}
+  .contact-card h2{color:var(--text)}
+  .contact-card p{color:var(--muted);max-width:520px;margin:0 auto 32px}
+  .big-phone{display:inline-block;font-size:clamp(1.5rem,6vw,2.4rem);font-weight:800;color:var(--ice);text-decoration:none;letter-spacing:.02em;margin-bottom:8px}
+  .big-phone:hover{color:#A8CCE2}
+  .mail-line{display:block;color:var(--muted);text-decoration:none;margin:10px 0 30px;word-break:break-all}
+  .mail-line:hover{color:var(--text)}
+
+  footer{background:var(--deep);color:var(--muted);padding:36px 0;font-size:.86rem}
+  footer .wrap{display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center}
+  footer a{color:var(--text);text-decoration:none}
+  .demo-note{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#5E7484}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Premier<em>AutoGlass</em></a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="tel:+19189991779">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="pill"><i></i>Mobile Service · Cushing, OK</span>
+    <h1>Cracked Windshield?<br><span class="grad">We Come To You.</span></h1>
+    <p class="lede">Premier Auto Glass replaces and repairs windshields and auto glass at your home, office, or anywhere in between. Skip the shop — get your <strong style="color:var(--ice)">FREE quote</strong> today.</p>
+    <div class="btn-row">
+      <a class="btn btn-solid" href="tel:+19189991779">Call 918-999-1779</a>
+      <a class="btn btn-line" href="mailto:Premierautoglassok@gmail.com?subject=Free%20quote%20—%20Premier%20Auto%20Glass">Email for Free Quote</a>
+    </div>
+    <div class="glass-stats">
+      <div class="gstat"><b>Mobile</b><span>We come to you</span></div>
+      <div class="gstat"><b>Free</b><span>Quotes, always</span></div>
+      <div class="gstat"><b>Same-Day</b><span>Service avail.</span></div>
+    </div>
+  </div>
+  <svg class="arc" viewBox="0 0 1440 110" preserveAspectRatio="none"><path d="M0,110 C360,10 1080,10 1440,110 Z" fill="#EFF3F6"/></svg>
+</header>
+
+<section id="services" style="padding-top:34px">
+  <div class="wrap">
+    <span class="sec-tag">Our Services</span>
+    <h2>Auto Glass, Done Right</h2>
+    <p class="sec-sub">From a tiny rock chip to a full windshield replacement — quality glass, proper installation, at your location.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16l9-11 9 11M7 16h10M12 5v11"/></svg></div>
+        <h3>Windshield Replacement</h3><p>Full windshield replacement with quality glass, sealed and set to factory spec — at your driveway or workplace.</p>
+        <span class="flag">Most popular</span>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg></div>
+        <h3>Rock Chip Repair</h3><p>Small chips and cracks repaired fast before they spread — often in under 30 minutes, saving you a full replacement.</p>
+        <span class="flag">Quick fix</span>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M10 5v14"/></svg></div>
+        <h3>Side &amp; Door Glass</h3><p>Broken door glass, quarter glass, and vent windows replaced — including cleanup of shattered glass.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 17h18M5 17V9l4-5h8l4 5v8M8 17v-4h8v4"/></svg></div>
+        <h3>Rear Windshield</h3><p>Back glass replacement with defroster grid connections restored, so everything works like factory.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M1 8h14v9H1zM15 11h4l3 3v3h-7z"/><circle cx="6" cy="19" r="1.8"/><circle cx="18" cy="19" r="1.8"/></svg></div>
+        <h3>Fleet &amp; Work Vehicles</h3><p>Keep your trucks and work vehicles on the road — priority scheduling for local businesses and fleets.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 2l7 4v6c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-4z"/></svg></div>
+        <h3>Insurance Claims Help</h3><p>We work with most insurance providers and can help handle the claim paperwork for covered replacements.</p>
+        <span class="flag">Hassle-free</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" style="padding-top:10px">
+  <div class="deep-band">
+    <span class="sec-tag">Why Premier</span>
+    <h2>The Easy Way to Fix Glass</h2>
+    <p class="sec-sub">No waiting rooms, no dropping your car off for the day. We bring the shop to you.</p>
+    <div class="why-grid">
+      <div class="why"><div class="n">1</div><div><h3>Truly Mobile</h3><p>Home, office, job site — if you're in our service area, we come to you with everything needed.</p></div></div>
+      <div class="why"><div class="n">2</div><div><h3>Free Quotes, No Pressure</h3><p>Call, text, or email a photo of the damage. You'll get a straight price before we touch anything.</p></div></div>
+      <div class="why"><div class="n">3</div><div><h3>Quality Glass &amp; Seal</h3><p>Proper urethane seal and fitment — your windshield is structural safety equipment, and we treat it that way.</p></div></div>
+      <div class="why"><div class="n">4</div><div><h3>Local &amp; Accountable</h3><p>We're your neighbors in Cushing, not a call center. If anything isn't right, we make it right.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="area" style="padding-top:64px">
+  <div class="wrap">
+    <span class="sec-tag">Service Area</span>
+    <h2>Serving Cushing &amp; Surrounding Towns</h2>
+    <p class="sec-sub">Mobile auto glass service across Payne County and nearby communities.</p>
+    <div class="area-pills">
+      <span>Cushing</span><span>Stillwater</span><span>Perkins</span><span>Drumright</span><span>Stroud</span><span>Yale</span><span>Ripley</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:20px">
+  <div class="wrap">
+    <div class="contact-card">
+      <span class="sec-tag" style="background:rgba(143,188,214,.14);color:var(--ice)">Get Your Free Quote</span>
+      <h2 style="margin-top:14px">One Call Fixes It</h2>
+      <p>Tell us your vehicle's year, make, and model — plus a photo of the damage if you can. We'll reply with your free quote fast.</p>
+      <a class="big-phone" href="tel:+19189991779">918-999-1779</a>
+      <a class="mail-line" href="mailto:Premierautoglassok@gmail.com?subject=Free%20quote%20—%20Premier%20Auto%20Glass">Premierautoglassok@gmail.com</a>
+      <div class="btn-row">
+        <a class="btn btn-solid" href="tel:+19189991779">Call Now</a>
+        <a class="btn btn-line" href="https://www.facebook.com/100086677773320/" target="_blank" rel="noopener">Facebook Page</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Premier Auto Glass · Cushing, OK · <a href="tel:+19189991779">918-999-1779</a></div>
+    <div class="demo-note">Demo website concept by Wahab Codes</div>
+  </div>
+</footer>
+
+</body>
+</html>
